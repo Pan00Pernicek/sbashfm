@@ -1,0 +1,16 @@
+#!/bin/sh
+echo $(tput setaf 6) "what action:" $(tput sgr0)
+read ac
+if [ $ac = cd ]; then
+ echo $(tput setaf 6) "to what folder:" $(tput sgr0)
+ read cd
+ clear
+ cd $cd
+ ls
+else
+ clear
+ $ac
+ read none
+ ls
+fi
+sbashfm

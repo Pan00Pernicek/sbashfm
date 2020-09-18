@@ -8,9 +8,17 @@ if [ $ac = cd ]; then
  cd $cd
  ls
 else
- clear
- $ac
- read none
- ls
+ if [ $ac = del ]; then
+  echo $(tput setaf 6) "delete what item:" $(tput sgr0)
+  read del
+  clear
+  rm $del
+  ls
+ else
+  clear
+  $ac
+  read none
+  ls
+ fi
 fi
 sbashfm

@@ -2,8 +2,10 @@
 simple bash file explorer
 currently supported:
  in sbashfm:
-  cd
+  cd, rm
+  
  directly
+  
   any command 
 
 ----------------------------------------------------------------------------

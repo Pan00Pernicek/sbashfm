@@ -8,7 +8,5 @@ currently supported:
   
   any command 
 
-----------------------------------------------------------------------------
-directly = executing command if no sbashfm's command matches desired command
-----------------------------------------------------------------------------
+lmao its just "ls" abuse
 have fun
